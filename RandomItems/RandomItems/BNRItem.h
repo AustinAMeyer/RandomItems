@@ -20,6 +20,15 @@ NS_ASSUME_NONNULL_BEGIN
     
 }
 
++ (instancetype)randomItem;
+
+//Designated initializer
+- (instancetype)initWithItemName:(NSString *)name
+                  valueInDollars:(int)value
+                    serialNumber:(NSString *)sNumber;
+
+- (instancetype)initWithItemName:(NSString *)name;
+
 //Setter
 - (void)setItemName:(NSString *)str;
 //getter
